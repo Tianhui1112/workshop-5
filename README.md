@@ -44,9 +44,9 @@ function preload() {
 ```
 
 
-1: `loadStrings` is a built-in function in js used to load text files. Here, the content of the CSV file is stored in the `characters` array.
+1.2.1: `loadStrings` is a built-in function in js used to load text files. Here, the content of the CSV file is stored in the `characters` array.
 
-2: The loaded character set will be randomly selected and displayed in the character streams.
+1.2.2: The loaded character set will be randomly selected and displayed in the character streams.
 
 
 
@@ -92,6 +92,7 @@ class Stream {
 ```
 
 1.3.1: generateChars is used to generate the character stream. We first define an empty array chars, then randomly select 5 to 15 characters from the CSV character set each time and add them to the array. This generates a new stream of characters.
+
 1.3.2: render is used to render the character stream. We set the color of all characters to green to simulate the effect in The Matrix. The starting Y-coordinate of the character stream is set using a global variable, and we track the Y-coordinate of each character in the stream with the formula let charY = this.y + i * fontSize. If a character's Y-coordinate exceeds the height of the canvas, we call generateChars again to generate a new character stream.
 
 1.4: Drawing Lina
