@@ -45,6 +45,7 @@ function preload() {
 
 
 1: `loadStrings` is a built-in function in js used to load text files. Here, the content of the CSV file is stored in the `characters` array.
+
 2: The loaded character set will be randomly selected and displayed in the character streams.
 
 
